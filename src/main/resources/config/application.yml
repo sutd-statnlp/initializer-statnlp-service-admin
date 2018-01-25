@@ -1,0 +1,34 @@
+info:
+    app:
+        name: Initializer Application
+        description: StatNLP Service Initializer Application
+        version: 1.0.0
+
+logging:
+    level:
+        ROOT: INFO
+        com.sutd.statnlp: INFO
+
+security:
+  user:
+    name: admin
+    password: admin
+
+spring:
+    application:
+        name: Initializer App
+    devtools:
+        restart:
+            enabled: true
+    cloud:
+      discovery:
+        client:
+          simple:
+            instances:
+              service1:
+                - uri: http://localhost:8080
+                  metadata:
+                    management.context-path: /
+
+server:
+    port: 8090
