@@ -1,4 +1,4 @@
-# Initializer for StatNLP service admin in Java
+# Initializer for StatNLP service monitoring
 
 ## Development 
 
